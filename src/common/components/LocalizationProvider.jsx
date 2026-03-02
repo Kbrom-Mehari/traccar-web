@@ -117,6 +117,7 @@ import zh from '../../resources/l10n/zh.json';
 import 'dayjs/locale/zh';
 import zh_TW from '../../resources/l10n/zh_TW.json';
 import 'dayjs/locale/zh-tw';
+import tig from '../../resources/l10n/tig.json';
 
 const languages = {
   af: { data: af, country: 'ZA', name: 'Afrikaans' },
@@ -130,6 +131,7 @@ const languages = {
   da: { data: da, country: 'DK', name: 'Dansk' },
   el: { data: el, country: 'GR', name: 'Ελληνικά' },
   en: { data: en, country: 'US', name: 'English' },
+  tig: { data: tig, country: 'ETH', name: 'Tigrigna' },
   es: { data: es, country: 'ES', name: 'Español' },
   fa: { data: fa, country: 'IR', name: 'فارسی' },
   fi: { data: fi, country: 'FI', name: 'Suomi' },

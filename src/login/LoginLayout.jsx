@@ -46,11 +46,11 @@ const LoginLayout = ({ children }) => {
 
   return (
     <main className={classes.root}>
-      <div className={classes.sidebar}>
+      {/* <div className={classes.sidebar}>
         {!useMediaQuery(theme.breakpoints.down('lg')) && (
           <LogoImage color={theme.palette.secondary.contrastText} />
         )}
-      </div>
+      </div> */}
       <Paper className={classes.paper}>
         <form className={classes.form}>{children}</form>
       </Paper>

@@ -6,7 +6,11 @@ import LogoImage from './LogoImage';
 const useStyles = makeStyles()((theme) => ({
   root: {
     display: 'flex',
-    height: '100%',
+    height: '100vh',
+    justifyContent: 'center',
+    alignItems: 'center',
+    // This will now switch between light and dark automatically
+    backgroundColor: theme.palette.background.default, 
   },
   sidebar: {
     display: 'flex',
@@ -27,16 +31,25 @@ const useStyles = makeStyles()((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
-    boxShadow: '-2px 0px 16px rgba(0, 0, 0, 0.25)',
-    [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(0, 25, 0, 0),
-    },
+    flex: 'none',
+    backgroundColor: 'transparent',
+    boxShadow: 'none',
   },
   form: {
-    maxWidth: theme.spacing(52),
+    maxWidth: theme.spacing(92),
+    width: '130%',
     padding: theme.spacing(5),
-    width: '100%',
+    // This ensures the card stays white in light mode and dark grey/black in dark mode
+    backgroundColor: theme.palette.background.paper, 
+    borderRadius: theme.spacing(2), 
+    // Adjusting shadow for dark mode visibility
+    boxShadow: theme.palette.mode === 'dark' 
+      ? '0px 10px 30px rgba(0, 0, 0, 0.5)' 
+      : '0px 10px 30px rgba(0, 0, 0, 0.08)', 
+    border: `1px solid ${theme.palette.divider}`,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 }));
 
